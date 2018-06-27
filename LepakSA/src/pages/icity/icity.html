@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ dest.dest }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div text-center>
+    <img src="">
+  </div>
+  
+  <ion-item text-wrap>Description: {{ dest.destDesc}}</ion-item>
+  <ion-item text-wrap>Operation Hour: {{ dest.destOphr }}</ion-item>
+  <ion-item text-wrap>Address: {{ dest.destAddr }}</ion-item>
+  <ion-item text-wrap>Contact: {{ dest.destPhone }}</ion-item>
+  <ion-item text-wrap>Activities: {{ dest.destActvty }}</ion-item>
+  <ion-item *ngIf="dest.destIG != 'none' ">
+   <a href="{{ dest.destIG }}">Go to Instagram</a> </ion-item>
+   <ion-item *ngIf="dest.destFB != 'none' ">
+    <a href="{{ dest.destFB }}">Go to Facebook</a> </ion-item>
+
+    <ion-item><a href="{{ dest.destLocation }}">Go to location</a> </ion-item>
+  
+</ion-content>

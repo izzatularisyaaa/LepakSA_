@@ -1,0 +1,16 @@
+page-homie {
+.bg{
+    background: linear-gradient(250deg,#f3ee4f,#f0a03d,#ceeb37,#e86b41,#d1d53d);
+   
+    background-size:400% 400%;
+    animation:colorchange 25s ease-out infinite;
+}
+
+}
+
+@keyframes colorchange{
+    0%{background-position: 0% 99%}
+    50%{background-position: 100% 1%}
+    100%{background-position: 10% 90%}
+}
+

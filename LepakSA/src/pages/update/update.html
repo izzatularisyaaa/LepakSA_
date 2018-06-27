@@ -1,0 +1,61 @@
+<!--
+  Generated template for the UpdatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="hitam">
+    <ion-title>Update Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-item>
+          <ion-label floating>Destination</ion-label>
+          <ion-textarea [(ngModel)]="data.dest"></ion-textarea>
+        </ion-item>
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-textarea [(ngModel)]="data.desc"></ion-textarea>
+    </ion-item>
+  <ion-item>
+    <ion-label floating>Operation Hours</ion-label>
+      <ion-textarea [(ngModel)]="data.ophr"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Address</ion-label>
+    <ion-textarea [(ngModel)]="data.addr"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Phone</ion-label>
+    <ion-input type="tel" [(ngModel)]="data.phone"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Activity</ion-label>
+    <ion-textarea [(ngModel)]="data.actvty"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Location</ion-label>
+    <ion-input type="url" [(ngModel)]="data.location"></ion-input>
+    </ion-item>
+  <ion-item>
+    <ion-label stacked>Instagram</ion-label>
+    <ion-input type="url" placeholder="Don't have an account? Kindly key-in 'none'." [(ngModel)]="data.ig"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Facebook</ion-label>
+    <ion-input type="url" placeholder="Don't have an account? Kindly key-in 'none'." [(ngModel)]="data.fb"></ion-input>
+  </ion-item>
+
+  <div text-center>
+    <br /><br /><button ion-button block color="hitam" (click)="btnSave()">Save</button>
+  </div>
+  
+  
+  </ion-list>
+</ion-content>
